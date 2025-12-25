@@ -20,7 +20,8 @@ const Hero = () => {
           animate={{ scale: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          Daniel Lopez
+          <span className="hero-name-first">Daniel</span>{' '}
+          <span className="hero-name-last">Lopez</span>
         </motion.h1>
         <motion.p
           className="hero-subtitle"
