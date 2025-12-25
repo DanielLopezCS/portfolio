@@ -1,18 +1,22 @@
 import { motion } from 'framer-motion';
 
 const Education = () => {
+  const baseUrl = import.meta.env.BASE_URL;
+  
   const education = [
     {
       degree: 'M.S. Software Engineering, AI Engineering',
       school: 'Western Governors University',
       status: 'In Progress',
-      year: 'Current'
+      year: 'Current',
+      icon: `${baseUrl}education/wgu-logo.png` // Add your WGU logo here
     },
     {
       degree: 'B.S. Computer Science',
-      school: 'Cal Poly Pomona',
+      school: 'California State Polytechnic University, Pomona',
       status: 'Completed',
-      year: '2019'
+      year: '2019',
+      icon: `${baseUrl}education/calpoly-logo.png` // Add your Cal Poly logo here
     }
   ];
 
@@ -45,14 +49,31 @@ const Education = () => {
             transition={{ duration: 0.5, delay: index * 0.2 }}
             whileHover={{ scale: 1.05, y: -5 }}
           >
-            <div className="education-header">
-              <h3>{edu.degree}</h3>
-              <span className={`status-badge ${edu.status.toLowerCase()}`}>
-                {edu.status}
-              </span>
+            <div className="education-card-content">
+              {edu.icon && (
+                <div className="education-icon">
+                  <img 
+                    src={edu.icon} 
+                    alt={`${edu.school} logo`}
+                    onError={(e) => {
+                      // Hide image if it doesn't exist
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                    }}
+                  />
+                </div>
+              )}
+              <div className="education-info">
+                <div className="education-header">
+                  <h3>{edu.degree}</h3>
+                  <span className={`status-badge ${edu.status.toLowerCase().replace(' ', '.')}`}>
+                    {edu.status}
+                  </span>
+                </div>
+                <p className="school-name">{edu.school}</p>
+                <p className="education-year">{edu.year}</p>
+              </div>
             </div>
-            <p className="school-name">{edu.school}</p>
-            <p className="education-year">{edu.year}</p>
           </motion.div>
         ))}
       </div>
