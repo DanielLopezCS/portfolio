@@ -11,15 +11,17 @@ const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Images loaded from public/projects/ai-study-tool/
+  // Using import.meta.env.BASE_URL to handle GitHub Pages base path
+  const baseUrl = import.meta.env.BASE_URL;
   const carouselImages: CarouselImage[] = [
     {
       id: 1,
-      image: '/projects/ai-study-tool/1.png',
+      image: `${baseUrl}projects/ai-study-tool/1.png`,
       description: 'Upload your syllabus and watch as the AI automatically generates structured coursework tailored to your curriculum.'
     },
     {
       id: 3,
-      image: '/projects/ai-study-tool/3.png',
+      image: `${baseUrl}projects/ai-study-tool/3.png`,
       description: 'Interactive flash cards with spaced repetition algorithms to optimize your learning and retention.'
     }
   ];
