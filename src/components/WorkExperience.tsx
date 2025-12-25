@@ -8,7 +8,7 @@ const WorkExperience = () => {
       company: 'Summit Interconnect',
       role: 'Software Engineer',
       period: 'April 2025 - Current',
-      icon: `${baseUrl}companies/summit-logo.png`, // Add your Summit logo here
+      icon: `${baseUrl}companies/summit.jpg`, // Add your Summit logo here
       highlights: [
         'Leading development of enterprise software solutions',
         'Implementing scalable architectures and modern development practices'
@@ -18,7 +18,7 @@ const WorkExperience = () => {
       company: 'Arrivo.ai',
       role: 'Software Engineer',
       period: 'April 2023 - February 2025',
-      icon: `${baseUrl}companies/arrivo-logo.png`, // Add your Arrivo logo here
+      icon: `${baseUrl}companies/arrivo.jpg`, // Add your Arrivo logo here
       highlights: [
         'Spearheaded major Frontend and Backend feature development on the platform',
         'Developed automated synchronization between web application database and CRM systems (HubSpot) for seamless non-technical team integration',
@@ -33,7 +33,7 @@ const WorkExperience = () => {
       company: 'Moyae',
       role: 'Software Engineer',
       period: 'July 2022 - April 2023',
-      icon: `${baseUrl}companies/moyae-logo.png`, // Add your Moyae logo here
+      icon: `${baseUrl}companies/moyae.jpg`, // Add your Moyae logo here
       highlights: [
         'Collaborated asynchronously with a team of engineers to build an Electronic Medical Record (EMR) system for Ophthalmologists',
         'Greenfielded innovative features, integrating machine learning for health insurance form validation and employee time tracking',
@@ -47,7 +47,7 @@ const WorkExperience = () => {
       company: 'Freelancing',
       role: 'General Software Development',
       period: 'Feburary 2020 - June 2022',
-      icon: `${baseUrl}companies/freelance-logo.png`, // Optional: Add a freelance icon
+      icon: `${baseUrl}companies/freelance.png`, // Optional: Add a freelance icon
       highlights: [
         'Delivered custom software solutions for various clients',
         'Managed full-stack development projects from conception to deployment'

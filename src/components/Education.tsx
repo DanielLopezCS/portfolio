@@ -9,14 +9,14 @@ const Education = () => {
       school: 'Western Governors University',
       status: 'In Progress',
       year: 'Current',
-      icon: `${baseUrl}education/wgu-logo.png` // Add your WGU logo here
+      icon: `${baseUrl}education/wgu.jpg` // Add your WGU logo here
     },
     {
       degree: 'B.S. Computer Science',
       school: 'California State Polytechnic University, Pomona',
       status: 'Completed',
       year: '2019',
-      icon: `${baseUrl}education/calpoly-logo.png` // Add your Cal Poly logo here
+      icon: `${baseUrl}education/cpp.png` // Add your Cal Poly logo here
     }
   ];
 
